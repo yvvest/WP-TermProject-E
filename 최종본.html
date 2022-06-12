@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, 그리고 Bootstrap 기여자들">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Carousel Template · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.kr/docs/5.1/examples/carousel/">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- 스타일 -->
+    <link href="carousel.css" rel="stylesheet">
+    <!--메인동영상-->
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .main-video {
+            width: 100%;
+            height: 1000px;
+            overflow: hidden;
+            margin: 0px auto;
+            position: relative;
+        }
+
+        video {
+            width: 100%;
+        }
+
+        .main-text {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+        }
+
+        .main-text p {
+            margin-top: -24px;
+            text-align: center;
+            font-size: 50px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .cropped {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+		
+		.content p {
+			line-height: 2.5em;
+			font-size: 1.2em;
+			margin: 3.5em 5.5em;
+		}
+		
+		.content h1 {
+			margin: 3.5em 0em 0em 2.0em;
+			font-weight: bold;
+		}
+    </style>
+</head>
+
+<body>
+    <!--메인동영상-->
+    <div class="main-video">
+        <video muted autoplay loop>
+            <source src="Travel.mp4" type="video/mp4">
+            <strong>Your browser does not support the video tag.</strong>
+        </video>
+        <div class="main-text">
+            <p> ↓ Find a place you want to travel to. </p>
+        </div>
+    </div>
+
+
+    <main>
+
+        <!--메인 사진-->
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="container">
+                        <img src="EiffelTower.jpg" class="img-fluid" alt="EiffelTower" width="100%;" , height="25%">
+                        <div class="carousel-caption text-start">
+                            <h1>France, Paris</h1>
+                            <p>A world cultural center with fashion and gourmet, art and romance.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">About Paris</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <img src="BigBen.jpg" class="img-fluid" alt="BigBen" width="100%;" , height="25%;">
+                        <div class="carousel-caption">
+                            <h1>London, United Kingdom</h1>
+                            <p>One of the "Three global cities in the world". It is the political, economic, cultural and transportation center of the UK.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">About London</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <img src="TimesSquare.jpg" class="img-fluid" alt="TimesSquare" width="100%;" , height="25%;">
+                        <div class="carousel-caption">
+                            <h1>NewYork, United States of America</h1>
+                            <p>The trendiest city in the world. A travel paradise that satisfies the romance and expectations of travelers by 120%.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">About NewYork</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <img src="Sensoji.jpg" class="img-fluid" alt="Sensoji" width="100%;" , height="25%;">
+                        <div class="carousel-caption text-end">
+                            <h1>Tokyo, Japan</h1>
+                            <p>A city of exquisite harmony between old and new.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">About Tokyo</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!--컨텐츠-->
+        <div class="content">
+             <a href="https://www.toureiffel.paris/fr" target="_blank">
+			 <img class="cropped" src="EiffelTower.jpg" alt="EiffelTower"></a>
+			
+            <h1>﻿에펠탑</h1>
+            <p>﻿에펠탑: Eiffel Tower 전망시설<br>
+                <b>프랑스와 파리의 과거와 현재를 상징하는 에펠탑</b><br>
+                주소: 5 Avenue, 75007 Paris France<br>
+                시간: 성수기 6/21~9/2 09:00~00:45 비수기 9/3~6/20 09:30~23:45 연중무휴<br>
+                가격: 25.5 EUR<br>
+                전화: +33 892 70 12 39<br>
+                대표인기#야경#광장#박물관#신혼여행#화려한<br>
+                방문목적#기념일#피크닉#배낭여행#신혼여행#자유여행<br></p>
+				<hr>
+                <p>에펠탑은 센 강 서쪽 강변에 드넓게 펼쳐진 샹 드 마르스 공원(ChampdeMars) 끄트머리에 있다.
+                1889년 프랑스혁명 100주년을 기념해 개최된 파리만국박람회 때 구스타브 에펠의 설계로 세워진 탑이다.
+                높이 301m는 당시로서는 세계 최고였다. 총 무게는 9700t으로, 철기둥을 잇는 리벳을 약 250만 개나 사용했다고 한다.
+                에펠탑 건축 당시에는 우아한 파리의 거리와 어울리지 않는 '철골 덩어리'라며 지식인들의 비난을 받았다.
+                소설가 모파상은 에펠탑의 모습을 보기 싫어 파리 시내에서 유일하게 에펠탑이 보이지 않는 에펠탑 내의 레스토랑에서 밥을 먹었다는 일화가 전해지기도 한다.
+                그러나 완공된 후에는 새로운 예술을 추구하는 사람들에게 많은 지지를 받았고, 오늘날에는 파리의 랜드마크로 자리 잡았다.</p>
+            <a href="https://url.kr/7eagdo" target="_blank">
+			<img class="cropped" src="covid.jpg" alt="covid-19"></a>
+            <h1>파리 ﻿입국조건</h1>
+            <p>입국가능여부조건부: 입국가능 <br>
+            백신필수여부: 필수아님<br>
+            여행지격리여부: 격리면제 <br>
+            업데이트 일시: 2022.06.10 10:15 기준<br>
+            정보출처) 외교부 해외안전여행 안전공지</p>
+
+            <a href="https://www.parliament.uk/visiting/visiting-and-tours/tours-of-parliament/bigben/" target="_blank">
+			<img class="cropped" src="BigBen.jpg" alt="BigBen"></a>
+            <h1>﻿빅벤</h1>
+            <p>﻿빅벤: Big Ben 랜드마크<br>
+                <b>영국 런던을 상징하는 빅벤 시계탑</b><br>
+                주소: Parliament Sqaure Elizabeth Tower - Houses of Parliament, Westminster, London SW1A 0AA England<br>
+                시간: 토 08:00~20:00<br>
+                평균 체류시간: 1시간 미만<br>
+                전화: +44 20 7219 3000<br>
+                대표인기#국회의사당#시계탑#야경#색다른느낌의#웅장한<br>
+                방문목적#배낭여행#촬영지#신혼여행#휴식#자유여행<br></p>
+				<hr>
+				<p>
+                영국 런던 웨스트민스터 궁전 북쪽 끝에 있는 시계탑의 별칭으로, 공식 명칭은 '엘리자베스 타워(Elizabeth Tower)'다.
+                1859년에 설립된 빅벤의 명칭은 당시 건설 책임자였던 벤저민 홀의 큰 체구에서 유래된 것이라는 설과, 의원이었던 벤자민 경의 이름에서 따왔다는 설이 전해진다. 
+                96ｍ 높이에 설치된 빅벤은 1859년 5월31일 처음 가동을 시작했고, 시계 밑에는 라틴어로 '주여 빅토리아 여왕을 구원하소서'라는 글귀가 새겨져 있다.
+                빅벤이라는 명칭은 처음에는 시계탑의 종을 뜻하는 말이었으나 이후 시계탑과 시계를 통칭하는 말로 바뀌었다. 
+                그러다 2016년 6월 영국 의회는 엘리자베스 2세 여왕의 즉위 60주년(다이아몬드 주빌리)에 맞춰 빅벤의 공식 명칭을 '엘리자베스 타워'로 정하였다. 
+            </p>
+			<a href="https://url.kr/7eagdo" target="_blank">
+            <img class="cropped" src="covid.jpg" alt="covid-19"></a>
+            <h1>런던 ﻿입국조건</h1>
+            <p>입국가능여부조건부: 입국가능<br>
+            백신필수여부: 필수아님<br>
+            여행지격리여부: 격리면제 <br>
+            업데이트 일시: 2022.06.10 10:11 기준<br>
+			정보출처) 외교부 해외안전여행 안전공지</p>
+
+			<a href="https://www.timessquarenyc.org/" target="_blank">
+            <img class="cropped" src="TimesSquare.jpg" alt="TimesSquare"></a>
+            <h1>﻿뉴욕 타임 스퀘어</h1>
+            <p>타임스퀘어: Times Square 지역<br>
+                <b>42번가부터 49번가까지 브로드웨이와 7Ave를 낀 뉴욕 하면 가장 먼저 대표되는 장소</b><br>
+                주소: Broadway, New York City, NY 10036<br>
+                전화: (212) 768-1560<br>
+                대표인기#여신상#뮤지컬#공연#화려한#자유여행<br>
+                방문목적#휴식#핫플레이스#신혼여행#테이크아웃#자유여행<br></p>
+				<hr>
+				<p>
+                42번가, 7번가,브로드웨이가 만나는 삼각지대를 ‘타임스 스퀘어’라 부른다. 예전 <뉴욕 타임스>의 사옥이었던 원 타임스 스퀘어(OneTimesSquare) 빌딩이 자리해 있기 때문이다.
+                    이 삼각지대에는 수많은 영화관, 공연장, 호텔, 레스토랑 등이 모여 있다. 항상 수많은 사람들로 북적이고 그만큼 통행하는 자동차도 많아 혼잡스럽지만 뉴욕의 분위기를 한껏 느낄 수 있다.
+                    밤이면 화려한 네온사인의 거리로 변신하는 것도 큰 볼거리다. 특히 세계에서 가장 비싼 광고료를 자랑하는, 최첨단 기술의 광고 전광판은 낮에도 눈길을 빼앗지만 밤에는 화려함이 절정을 이룬다.
+                    ‘세계의 교차로(CrossroadoftheWorld)’라는 이름에 걸맞는, 뉴욕의 상징과도 같은 거리다.</p>
+            <a href="https://url.kr/7eagdo" target="_blank">
+			<img class="cropped" src="covid.jpg" alt="covid-19"></a>
+            <h1>뉴욕 ﻿입국조건</h1>
+            <p>입국가능여부조건부: 입국가능 <br>
+            백신필수여부: 필수아님<br>
+            여행지격리여부: 격리면제 <br>
+            업데이트 일시: 2022.06.10 10:15 기준<br>
+			정보출처) 외교부 해외안전여행 안전공지</p>
+
+            <a href="https://www.senso-ji.jp/" target="_blank">
+			<img class="cropped" src="Sensoji.jpg" alt="Sensoji"></a>
+            <h1>﻿센소지</h1>
+            <p>﻿센소지: Senso-ji Temple 성지<br>
+                <b>도쿄 내 가장 오래된 절. 오래된 노포도, 사람도 많은 듯하나 그 또한 여행의 묘미</b>
+                주소: 2-3-1, Asakusa, Taito 111-0032 Tokyo Prefecture<br>
+                시간: 하계 06:00~17:00 동계 06:30~17:00<br>
+                평균 체류시간: 1-2 시간<br>
+                전화: +81 3-3842-0181<br>
+                대표인기#관음상#신사#기모노#전통적인#자유여행<br>
+                방문목적#데이트#유적#전통적인#자유여행<br></p>
+				<hr>
+				<p>
+                시타마치 지역의 민간신앙 중심지다. 서기 628년 이 지역의 어부 형제가 강에서관음상을 주워 안치한것이 이 절의 시작이다.
+                건물의 대부분은 제2차 세계대전 때 소실되었고 지금의 건물은 1950년대에 재건축한 것이다.
+                도쿄의 전통미를 보기 위한 관광객과 이곳에 복을 빌기 위해 찾아오는 시타마치 주민들로 언제나 발 디딜 틈 없이 북적인다.
+                관음상이 안치되어 있는 본당, 석가모니의 사리가 안치되어 있는 5층탑, 센소지 창건 관련 인물들을 모시는아사쿠사신사.
+                이 세 건물을 중심으로 다양한 건물과 조형물이 오밀조밀 있다. 특히 중앙에 있는 화로는 이곳에서 피어오르는 연기를 몸에 쐬면 아픈 곳이 낫는다는 말이 전해져 언제나 사람들로 북적인다.</p>
+            <a href="https://url.kr/7eagdo" target="_blank">
+			<img class="cropped" src="covid.jpg" alt="covid-19"></a>
+            ﻿<h1>도쿄 입국조건</h1>
+            <p>입국가능여부조건부: 입국가능 <br>
+            백신필수여부: 필수아님<br>
+            여행지격리여부: 격리면제 6월 10일부터 한국인 단체 관광객의 경우 여행 가능<br>
+            업데이트 일시: 2022.06.10 10:51 기준<br>
+			정보출처) 외교부 해외안전여행 안전공지</p>
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>2022-1 WebProgramming TermProject Team E</p>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
